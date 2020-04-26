@@ -3,6 +3,20 @@
 import serial
 import os
 
+'''
+GPS Parser version 2
+Rob Webster
+April 2020
+
+- For receiving and parsing data from UBlox-7 USB GPS dongle on Raspberry Pi
+
+- See README.md for setup instructions
+
+- Time, Latitude, and Longitude data are written to a text file named "DDMMYY_gpsdata.txt" (comma separated values)
+- Lat/Lon are in signed decimal degrees (eg Southern and Western hemispheres are -ve).
+
+'''
+
 # This is the port at which raw data arrives from the GPS dongle
 port = "/dev/ttyACM0"
 
